@@ -1,0 +1,238 @@
+/* Cleanup */
+* {
+  margin: 0;
+}
+
+fieldset, img {
+  border: none;
+}
+
+a, a:focus {
+  outline: medium none;
+}
+
+/* 100% tall body */
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  background: none repeat scroll 0 0 #FFFFFF;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -30px;
+}
+
+body {
+  background: none repeat scroll 0 0 #7D7D7D;
+  color: #666666;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Global Styles */
+.page_wide {
+  margin: 0 auto;
+  text-align: left;
+  width: 960px;
+  position: relative;
+}
+
+/* Header */
+#header {
+  background: none repeat scroll 0 0 #222222;
+  height: 70px;
+  padding-top: 5px;
+  position: relative;
+  clear: both;
+}
+
+#header #admin_logout {
+  color: #CCCCCC;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header #admin_logout a {
+  color: #CC3300;
+}
+
+#header img.logo {
+  margin-top: 20px;
+}
+
+ul#topnav {
+  float: right;
+  list-style: none outside none;
+  margin-top: 30px;
+}
+
+ul#topnav li {
+  background: none;
+  float: left;
+  margin-left: 20px;
+}
+
+ul#topnav li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #2E2E2E;
+  border: 1px solid #181818;
+  padding: 3px 8px;
+  -moz-border-radius: 6px;
+}
+
+ul#topnav li a.hovered {
+  background-color: #505050;
+}
+
+ul#topnav li a.selected, ul#topnav li a.selected:hover {
+  background-color: #FFC20E;
+  color: #222222;
+}
+
+/* Main Content */
+#main_content {
+  padding: 2em 0;
+}
+
+#main_content #heading {
+  margin-bottom: 1em;
+}
+
+#main_content #heading h1 {
+  color: #363636;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+#main_content #heading p {
+  color: #818181;
+  font-size: 1.2em;
+}
+
+#main_content #content {
+  border-top: 1px solid #D7D7D7;
+  padding-top: 1.5em;
+}
+
+#content p.intro {
+  font-size: 1.25em;
+}
+
+/* Footer */
+#wrapper #clear_footer, #footer {
+  height: 30px;
+  clear: both;
+}
+
+#footer {
+  background: none repeat scroll 0 0 #7D7D7D;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#footer p {
+  font-size: 12px;
+  line-height: 12px;
+  height: 12px;
+  padding-top: 9px;
+}
+
+#footer p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#footer p a:hover {
+  text-decoration: underline;
+}
+
+#footer .divider {
+  border-right: 1px solid #FFFFFF;
+  margin: 0 10px;
+}
+
+/*******************
+Page Specific Styles
+*******************/
+
+/* Home Page */
+body.home #main_content #heading {
+  display:none;
+}
+
+body.home #main_content #content {
+  border-top: none;
+  padding-top: 0;
+}
+
+body.home #main_content #content .home_slide_show {
+  width: 100%;
+  background: #323232;
+  height: 412px;
+  -moz-border-radius: 10px;
+}
+
+body.home #main_content #content .home_slide_show .slide_pane {
+  float: left;
+  width: 700px;
+  height: 412px;
+  background: url("images/slides/slides.png") repeat scroll 0 0 #575757;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector {
+  margin: 0 0 0 700px;
+  padding: 0;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul {
+  list-style: none outside none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li {
+  border-top: 1px solid #494949;
+  border-bottom: 1px solid #1B1B1B;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li:hover {
+  background: url("images/slide_selector_bg.png") repeat scroll 0 0 #323232;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li.first {
+  border-top: 1px solid transparent;
+  -moz-border-radius-topright: 10px;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li.last {
+  border-bottom: 1px solid transparent;
+  -moz-border-radius-bottomright: 10px;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li .title {
+  color: #FFFFFF;
+  font-size: 1.6em;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+body.home #main_content #content .home_slide_show .slide_selector ul li .description {
+  color: #999999;
+  font-size: 1.1em;
+  display: block;
+  margin-top: 10px;
+}
