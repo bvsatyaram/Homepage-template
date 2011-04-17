@@ -32,7 +32,7 @@ URL:      www.noaesthetic.com
    </Group>
 
    <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#7d7d7d" value="#7d7d7d"/>
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#ffffff" value="#ffffff"/>
      <Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="#ffffff"/>
      <Variable name="header.background.color" description="Header Background" type="color" default="#222222" value="#222222"/>
    </Group>
@@ -549,12 +549,6 @@ body.mobile .AdSense {
 .mobile-link-button a:link, .mobile-link-button a:visited {
   color: $(content.background.color);
 }
-
-/* bvsatyaram modifications
------------------------------------------------ */
-body .navbar  {
-  display: none;
-}
 ]]></b:skin>
 
     <b:template-skin>
@@ -618,6 +612,87 @@ body .navbar  {
       #layout .region-inner {
         min-width: 0;
         width: auto;
+      }
+
+      /* bvsatyaram modifications
+      ----------------------------------------------- */
+      body {
+        padding: 0 0;
+      }
+
+      body .navbar  {
+        display: none;
+      }
+
+      .content-inner {
+        padding: 0;
+      }
+
+      .main-inner .column-center-inner {
+        padding: 0;
+      }
+
+      .main-inner .column-center-inner .section {
+        margin: 0;
+      }
+
+      .Header h1, .Header h1 a, .Header h1 a:visited, .Header h1 a:hover {
+        color: #FFFFFF;
+        font: 30px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+        margin-top: 15px;
+      }
+
+      .header-inner .section {
+        margin: 0 auto;
+        width: 960px;
+      }
+
+      .header-inner .Header .titlewrapper {
+        padding: 0;
+      }
+
+      .header-outer {
+        height: 70px;
+      }
+
+      .main-outer {
+        margin: 0 auto;
+        width: 960px;
+      }
+
+      h3.post-title {
+        font: 29px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+      }
+
+      .comments h4, h3.post-title a, .comments h4 a, h3.post-title a:visited, .comments h4 a:visited, h3.post-title a:hover, .comments h4 a:hover {
+        font: 19px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+      }
+
+      .content-outer, .content-fauxcolumn-outer, .region-inner {
+        max-width: 100%;
+        min-width: 100%;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -goog-ms-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .footer-outer {
+        background: none repeat scroll 0 0 #7D7D7D;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      .footer-outer a, .footer-outer a:visited, .footer-outer a:hover {
+        color: #FFFFFF;
+      }
+
+      .footer-outer .footer-inner {
+        padding: 5px 15px;
+      }
+
+      .footer-outer .widget {
+        margin: 0 0;
       }
       ]]>
     </b:template-skin>
