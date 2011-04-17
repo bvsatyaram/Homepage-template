@@ -14,7 +14,9 @@
     <b:skin><![CDATA[/*
 -----------------------------------------------
 Blogger Template Style
-Name:     Simple
+Name:     Simple - Modified
+Modifier: Satyaram B V
+URL:      www.bvsatyaram.com
 Designer: Josh Peterson
 URL:      www.noaesthetic.com
 ----------------------------------------------- */
@@ -25,20 +27,20 @@ URL:      www.noaesthetic.com
 
    <Group description="Page Text" selector="body">
      <Variable name="body.font" description="Font" type="font"
-         default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="body.text.color" description="Text Color" type="color" default="#222222" value="#222222"/>
+         default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#666666" value="#666666"/>
    </Group>
 
    <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd" value="#66bbdd"/>
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#7d7d7d" value="#7d7d7d"/>
      <Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="#ffffff"/>
-     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="transparent"/>
+     <Variable name="header.background.color" description="Header Background" type="color" default="#222222" value="#222222"/>
    </Group>
 
    <Group description="Links" selector=".main-outer">
-     <Variable name="link.color" description="Link Color" type="color" default="#2288bb" value="#2288bb"/>
-     <Variable name="link.visited.color" description="Visited Color" type="color" default="#888888" value="#888888"/>
-     <Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#33aaff"/>
+     <Variable name="link.color" description="Link Color" type="color" default="#cc3300" value="#cc3300"/>
+     <Variable name="link.visited.color" description="Visited Color" type="color" default="#cc3300" value="#cc3300"/>
+     <Variable name="link.hover.color" description="Hover Color" type="color" default="#cc3300" value="#cc3300"/>
    </Group>
 
    <Group description="Blog Title" selector=".header h1">
@@ -66,7 +68,7 @@ URL:      www.noaesthetic.com
 
    <Group description="Post Title" selector="h3.post-title, .comments h4">
      <Variable name="post.title.font" description="Font" type="font"
-         default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+         default="normal normal 29px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 29px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
    </Group>
 
    <Group description="Date Header" selector=".date-header">
@@ -77,22 +79,22 @@ URL:      www.noaesthetic.com
    </Group>
 
    <Group description="Post Footer" selector=".post-footer">
-     <Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666" value="#666666"/>
+     <Variable name="post.footer.text.color" description="Text Color" type="color" default="#acacac" value="#acacac"/>
      <Variable name="post.footer.background.color" description="Background Color" type="color"
-         default="#f9f9f9" value="#f9f9f9"/>
-     <Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee" value="#eeeeee"/>
+         default="#ffffff" value="#ffffff"/>
+     <Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#ffffff" value="#ffffff"/>
    </Group>
 
    <Group description="Gadgets" selector="h2">
      <Variable name="widget.title.font" description="Title Font" type="font"
         default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000" value="#000000"/>
-     <Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999" value="#999999"/>
+     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#333333" value="#333333"/>
+     <Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#333333" value="#333333"/>
    </Group>
 
    <Group description="Images" selector=".main-inner">
      <Variable name="image.background.color" description="Background Color" type="color" default="#ffffff" value="#ffffff"/>
-     <Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee" value="#eeeeee"/>
+     <Variable name="image.border.color" description="Border Color" type="color" default="#ffc20e" value="#ffc20e"/>
      <Variable name="image.text.color" description="Caption Text Color" type="color" default="$(body.text.color)" value="$(body.text.color)"/>
    </Group>
 
@@ -546,6 +548,12 @@ body.mobile .AdSense {
 
 .mobile-link-button a:link, .mobile-link-button a:visited {
   color: $(content.background.color);
+}
+
+/* bvsatyaram modifications
+----------------------------------------------- */
+body .navbar  {
+  display: none;
 }
 ]]></b:skin>
 
@@ -1571,7 +1579,7 @@ body.mobile .AdSense {
       <b:if cond='data:totalFollowerCount != &quot;&quot;'>
         <h2 class='title'><data:title/> (<data:totalFollowerCount/>)</h2>
       </b:if>
-    </b:if>  
+    </b:if>
   </b:if>
   <div class='widget-content'>
     <div expr:id='data:widget.instanceId + &quot;-wrapper&quot;'>
@@ -1600,7 +1608,7 @@ body.mobile .AdSense {
               </a>
             </div>
           </b:if>
-  
+
           <div class='followers-grid'>
             <b:if cond='data:totalFollowerCount == 0'>
               <div class='profile-link item-control following-follow-this'>
@@ -1619,7 +1627,7 @@ body.mobile .AdSense {
             </b:loop>
             <div class='clear'/>
           </div>
-  
+
           <div class='followers-canvas profile-link'>
             <data:followersFooterMessage/>
             <span class='item-control following-not-admin'>
@@ -1763,3 +1771,4 @@ body.mobile .AdSense {
   </b:includable>
 </b:widget>
 </b:section-contents><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+                
