@@ -22,3 +22,15 @@ $(function() {
       return false;
     });
 })
+
+
+///////////////////
+// Welcome Actions
+///////////////////
+$(document).ready(function(){
+	$('#welcome_actions .action').hover(function(){
+		$(".caption", this).stop().animate({top:'0px'},{queue:false,duration:300});
+	}, function() {
+		$(".caption", this).stop().animate({top:'-40px'},{queue:false,duration:300});
+	});
+});

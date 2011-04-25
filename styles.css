@@ -11,6 +11,32 @@ a, a:focus {
   outline: medium none;
 }
 
+/* Clearfix */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+* + html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
 /* 100% tall body */
 html, body {
   height: 100%;
@@ -171,3 +197,107 @@ body.home #main_content #content {
   border-top: none;
   padding-top: 0;
 }
+
+body.home #main_content #content #welcome {
+  width: 940px;
+  height: 280px;
+  background: url('images/home/main_pane_bg.png') no-repeat scroll 0 0 #3E3E3E;
+  padding: 10px;
+  -moz-border-radius: 8px;
+}
+
+body.home #main_content #content #welcome img {
+  border: 5px solid #FFC20E;
+  height: 250px;
+  float: left;
+  margin: 10px 50px;
+}
+
+body.home #main_content #content #welcome .message {
+  margin: 10px;
+  float: left;
+  width: 580px;
+  font-family: TangerineBold, Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+}
+
+body.home #main_content #content #welcome h2 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+body.home #main_content #content #welcome p {
+  color: #CCCCCC;
+  font-size: 2em;
+  height: 160px;
+  padding-right: 20px;
+  text-align: justify;
+  width: 560px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+body.home #main_content #content #welcome a.more,
+body.home #main_content #content #welcome a.more:hover,
+body.home #main_content #content #welcome a.more:visited {
+  color: #FFC20E;
+  float: right;
+  font-size: 2em;
+  margin: 25px 20px 0 0;
+  text-decoration: none;
+}
+
+body.home #main_content #content #welcome a.more:hover {
+  text-decoration: underline;
+}
+
+body.home #main_content #content #welcome_actions {
+  margin-top: 20px;
+}
+
+body.home #main_content #content #welcome_actions .action {
+  width: 200px;
+  height: 120px;
+  float: left;
+  border: 1px solid #C1C1C1;
+  text-align: center;
+  -moz-border-radius: 5px;
+  margin-left: 50px;
+  background: url('images/home/welcome_action.jpg') no-repeat scroll 0 0 #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+body.home #main_content #content #welcome_actions .first {
+  margin-left: 0;
+}
+
+body.home #main_content #content #welcome_actions .action p {
+  height: 35px;
+  padding-top: 5px;
+  color: #555555;
+  font-size: 2em;
+  font-family: TangerineBold, Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+}
+
+body.home #main_content #content #welcome_actions .action .caption {
+  text-align: center;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 40px;
+  background: #000000;
+  -moz-border-radius: 5px;
+	opacity: .8;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+body.home #main_content #content #welcome_actions .action .caption p {
+  color: #CCCCCC;
+  font-family: TangerineBold, Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+  font-size: 2em;
+  padding-top: 8px;
+}
+
