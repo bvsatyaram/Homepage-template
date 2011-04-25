@@ -8,7 +8,7 @@ $(document).ready(function(){
         backgroundColor: "#505050"
       }, {
         queue:false,
-        duration:500
+        duration:300
       });
     },
     function() {
@@ -16,7 +16,7 @@ $(document).ready(function(){
         backgroundColor: "#2E2E2E"
       }, {
         queue:false,
-        duration:500
+        duration:300
       });
     });
 });
